@@ -6,7 +6,7 @@ import gzip
 st.set_page_config(page_title="Movie Recommender", layout="centered")
 
 # Load data
-movies_dict = pickle.load(open('movie_dict(1).pkl', 'rb'))
+movies_dict = pickle.load(open('movie_dict.pkl', 'rb'))
 
 with gzip.open('similarity_compressed.pkl.gz', 'rb') as f:
     similarity = pickle.load(f)
